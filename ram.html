@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyGo</title>
+    <link rel="stylesheet" href="ram.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="left-wrap">
+                <div class="navlogo">
+                    <div class="logo"></div>
+                </div>
+                <div class="nav-list">
+                    <a class="elementm" href="#Flight">
+                        <div class="nav-item-txt1">
+                            <i class="fa-solid fa-plane-up"></i>
+                            Flights
+                        </div>
+                    </a>
+                    <a class="elementm" href="#Train">
+                        <div class="nav-item-txt">
+                            <i class="fa-solid fa-train"></i>
+                            Train
+                        </div>
+                    </a>
+                    <a class="elementm" href="#Emergency">
+                        <div class="nav-item-txt">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            Emergency
+                        </div>
+                    </a>
+                    <a class="elementm" href="#Help">
+                        <div class="nav-item-txt">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                            Help
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="right-wrap">
+                <div class=" nav-list">
+                    <a class="elementm" href="#Customer Service">
+                        <div class="nav-item-txt">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            Customer Service
+                        </div>
+                    </a>
+                    <a class="elementm" href="#Login/SignUp">
+                        <div class="nav-item-txt">
+                            <i class="fa-solid fa-user-plus"></i>
+                            Login/Signup
+                        </div>
+                    </a>
+                </div>
+            </div>
+    </header>
+
+    <div class="banner">
+        <div class="banner-img-container"></div>
+    </div>
+
+    <div class="flight-form max-container-width">
+        <nav class="nav-list2">
+            <span class>
+                <span class="nav-list-item2 u-ib u-uppercase selected" data="0">One Way</span>
+            </span>
+            <span class>
+                <span class="nav-list-item2 u-ib u-uppercase" data="1">Round Trip</span>
+            </span>
+            <span class>
+                <span class="nav-list-item2 u-ib u-uppercase" data="2">Explore</span>
+            </span>
+        </nav>
+
+        <div class="form-fields">
+            <div class="orgn u-ib u-v-align-bottom u-text-left">
+                <div class="c-auto-cmpltr">
+                    <div class="c-input-cntr">
+                        <div class="input-label">From</div>
+                        <input class="c-input u-v-align-middle" value placeholder="Enter city or airport" type="text"
+                            autocomplete="new-password">
+                        <span class="material-underline"></span>
+                    </div>
+
+                    <div class="autocompleter-results u-box u-animated u-fadeOut autocompleter-results-caret"
+                        style="display: none;">
+                        <div class="autocompleter-scroll-cntr">
+                            <div class="u-box-header">Popular Airport</div>
+                            <div class="result-row flight-airport u-box-result selected" data-acindex="0">
+                                <div class="text-cntr">
+                                    <div class="city-row ">
+                                        <div class="city">DEL - New Delhi, India</div>
+                                    </div>
+                                    <div class="airport">Indira Gandhi Intl Airport</div>
+                                </div>
+                            </div>
+
+                            <div class="result-row flight-airport u-box-result" data-acindex="1">
+                                <div class="text-cntr">
+                                    <div class="city-row ">
+                                        <div class="city">BOM - Mumbai, India</div>
+                                    </div>
+                                    <div class="airport">Chatrapati Shivaji International Airport</div>
+                                </div>
+                            </div>
+
+                            <div class="result-row flight-airport u-box-result" data-acindex="2">
+                                <div class="text-cntr">
+                                    <div class="city-row ">
+                                        <div class="city">HYD - Hyderabad, India</div>
+                                    </div>
+                                    <div class="airport">Rajiv Gandhi International Airport</div>
+                                </div>
+                            </div>
+
+                            <div class="result-row flight-airport u-box-result" data-acindex="3">
+                                <div class="text-cntr">
+                                    <div class="city-row ">
+                                        <div class="city">BLR - Bengaluru, India</div>
+                                    </div>
+                                    <div class="airport">Kempegowda International Airport</div>
+                                </div>
+                            </div>
+
+                            <div class="result-row flight-airport u-box-result" data-acindex="4">
+                                <div class="text-cntr">
+                                    <div class="city-row ">
+                                        <div class="city">MAA - Chennai, India</div>
+                                    </div>
+                                    <div class="airport">Chennai International Airport</div>
+                                </div>
+                            </div>
+
+                            <div class="result-row flight-airport u-box-result" data-acindex="5">
+                                <div class="text-cntr">
+                                    <div class="city-row ">
+                                        <div class="city">GOI - Goa, India</div>
+                                    </div>
+                                    <div class="airport">Dabolim Airport</div>
+                                </div>
+                            </div>
+
+                            <div class="result-row flight-airport u-box-result" data-acindex="6">
+                                <div class="text-cntr">
+                                    <div class="city-row ">
+                                        <div class="city">DXB - Dubai, United Arab Emirates</div>
+                                    </div>
+                                    <div class="airport">Dubai International Airport</div>
+                                </div>
+                            </div>
+
+                            <div class="result-row flight-airport u-box-result" data-acindex="7">
+                                <div class="text-cntr">
+                                    <div class="city-row ">
+                                        <div class="city">SIN - Singapore, Singapore</div>
+                                    </div>
+                                    <div class="airport">Changi</div>
+                                </div>
+                            </div>
+
+                            <div class="result-row flight-airport u-box-result" data-acindex="8">
+                                <div class="text-cntr">
+                                    <div class="city-row ">
+                                        <div class="city">BKK - Bangkok, Thailand</div>
+                                    </div>
+                                    <div class="airport">Suvarnabhumi Airport</div>
+                                </div>
+                            </div>
+
+                            <div class="result-row flight-airport u-box-result" data-acindex="9">
+                                <div class="text-cntr">
+                                    <div class="city-row ">
+                                        <div class="city">KUL - Kuala Lumpur, Malaysia</div>
+                                    </div>
+                                    <div class="airport">Kuala Lumpur Intl</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="u-ib swap-icon ixi-icon-swap u-v-align middle" 1>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <div class="dstn u-ib u-v align-bottom u-text-left">
+                <div class="c-auto-cmpltr">
+                    <div class="c-input-cntr">
+                        <div class="input label">To</div>
+                        <input class="c-input u-v-align-middle" value placeholder="Enter city or airport" type="text"
+                            autocomplete="new-password">
+                        <span class="material-underline"></span>
+                    </div>
+                    <div class="autocompleter-results u-box u-animated u-fadeOut autocompleter-results-caret">
+                        <div class="autocompleter-scroll-cntr">
+                            <div class="u-box-header">Popular Airports</div>
+                            <div class="result-row flight-airport u-box-result selected" data-acindex="0">
+                                <div class="text-cntr">
+                                    <div class="city-row ">
+                                        <div class="city">DEL - New Delhi, India</div>
+                                    </div>
+                                    <div class="airport">Indira Gandhi Intl Airport</div>
+                                </div>
+
+                                <div class="result-row flight-airport u-box-result" data-acindex="1">
+                                    <div class="text-cntr">
+                                        <div class="city-row ">
+                                            <div class="city">BOM - Mumbai, India</div>
+                                        </div>
+                                        <div class="airport">Chatrapati Shivaji International Airport</div>
+                                    </div>
+
+                                    <div class="result-row flight-airport u-box-result" data-acindex="2">
+                                        <div class="text-cntr">
+                                            <div class="city-row ">
+                                                <div class="city">HYD - Hyderabad, India</div>
+                                            </div>
+                                            <div class="airport">Rajiv Gandhi International Airport</div>
+                                        </div>
+
+                                        <div class="result-row flight-airport u-box-result" data-acindex="3">
+                                            <div class="text-cntr">
+                                                <div class="city-row ">
+                                                    < div class="city">BLR - Bengaluru, India
+                                                </div>
+                                            </div>
+                                            <div class="airport">Kempegowda International Airport</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="date u-ib u-text-left">
+                <div class="from-to-cal">
+                    <div class="from-date u-ib">
+                        <div class="c-input-cntr">
+                            <div class="input-label">Departure</div>
+                            <input class="c-input u-v-align-middle" value="31 Oct, Tue" placeholder="Depart" type="text"
+                                readonly="" data-rome-id="0">
+                            <span class="material-underline"></span>
+                        </div>
+                    </div>
+                    <div class="to-date u-ib u-pos-rel">
+                        <div class="c-input-cntr">
+                            <div class="input-label">Return</div>
+                            <input class="c-input u-v-align-middle" value="" placeholder="Return" type="text"
+                                readonly="">
+                            <span class="material-underline"></span>
+                        </div>
+                    </div>
+                    <div class="error-message">
+                        <div class="u-triangle-up"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="passenger u-ib u-v-align-bottom u-text-left">
+                <div class="passanger-class-input u-pos-rel">
+                    <div class="c-input-cntr"><label for="passenger-list" class="input-label">Travellers | Class</label>
+                        <input class="c-input u-v-align-middle" id="passenger-list" value="1 Passenger, Economy"
+                            placeholder="" type="text" readonly="">
+                        <span class="material-underline"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="search u-ib u-v-align-bottom">
+                <button class="c-btn u-link  enabled">
+                    <div class="u-ripple">
+                        <span class="u-ripple-circle" style="top: 34.8px; left: 104.4px;"></span>
+                    </div> Search
+                </button>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="page-content">
+        <div class="main-cntr u-v-align-top u-ib">
+            <div class="home-widgets-cntr row">
+                <div class="trending-dest-wrapper">
+                    <div class="home-widget trending-dest-container u-box">
+                        <div class="trending-dest-header">
+                            <h2 data-testid="trending-header">Best Flight Deals Of The Day</h2>
+                        </div>
+                        <div class="filters-container">
+                            <div class="filters-header">
+                                <div class="flight-origin-fliter">
+                                    <div class="c-auto-cmpltr">
+                                        <div class="c-input-cntr">
+                                            <div class="input-label">Flying From</div><input
+                                                class="c-input u-v-align-middle" value="DEL - New Delhi"
+                                                placeholder="Enter city or airport" type="text"
+                                                autocomplete="new-password"><span class="material-underline"></span>
+                                        </div>
+                                        <!-- <div class="clear-input ixi-icon-cross"></div> -->
+                                        <div class="autocompleter-results u-box u-animated u-fadeOut autocompleter-results-caret"
+                                            style="display: none;">
+                                            <div class="autocompleter-scroll-cntr">
+                                                <div class="result-row flight-airport u-box-result selected"
+                                                    data-acindex="0">
+                                                    <div class="text-cntr">
+                                                        <div class="city-row ">
+                                                            <div class="city">DEL - New Delhi, India</div>
+                                                        </div>
+                                                        <div class="airport">Indira Gandhi Intl Airport</div>
+                                                    </div>
+                                                </div>
+                                                <div class="result-row flight-airport u-box-result" data-acindex="1">
+                                                    <div class="text-cntr">
+                                                        <div class="city-row ">
+                                                            <div class="city">VVI - Santa Cruz De La Sierra, Bolivia
+                                                            </div>
+                                                        </div>
+                                                        <div class="airport">Viru Viru Intl</div>
+                                                    </div>
+                                                </div>
+                                                <div class="result-row flight-airport u-box-result" data-acindex="2">
+                                                    <div class="text-cntr">
+                                                        <div class="city-row ">
+                                                            <div class="city">DQO - Delhi, United States</div>
+                                                        </div>
+                                                        <div class="airport">Delhi Municipal</div>
+                                                    </div>
+                                                </div>
+                                                <div class="result-row flight-airport u-box-result" data-acindex="3">
+                                                    <div class="text-cntr">
+                                                        <div class="city-row ">
+                                                            <div class="city">FUE - Puerto Del Rosario, Spain</div>
+                                                        </div>
+                                                        <div class="airport">Fuerteventura/puerto Del Rosario</div>
+                                                    </div>
+                                                </div>
+                                                <div class="result-row flight-airport u-box-result" data-acindex="4">
+                                                    <div class="text-cntr">
+                                                        <div class="city-row ">
+                                                            <div class="city">PDL - Ponta Delgada, Portugal</div>
+                                                        </div>
+                                                        <div class="airport">Nordela</div>
+                                                    </div>
+                                                </div>
+                                                <div class="result-row flight-airport u-box-result" data-acindex="5">
+                                                    <div class="text-cntr">
+                                                        <div class="city-row ">
+                                                            <div class="city">RUN - Saint Denis De La Reunion, Reunion
+                                                            </div>
+                                                        </div>
+                                                        <div class="airport">Reunion Roland Garros Airport</div>
+                                                    </div>
+                                                </div>
+                                                <div class="result-row flight-airport u-box-result" data-acindex="6">
+                                                    <div class="text-cntr">
+                                                        <div class="city-row ">
+                                                            <div class="city">SPC - Santa Cruz De La Palma, Spain</div>
+                                                        </div>
+                                                        <div class="airport">La Palma</div>
+                                                    </div>
+                                                </div>
+                                                <div class="result-row flight-airport u-box-result" data-acindex="7">
+                                                    <div class="text-cntr">
+                                                        <div class="city-row ">
+                                                            <div class="city">STI - Santiago De Los Caballero, Dominican
+                                                                Republic</div>
+                                                        </div>
+                                                        <div class="airport">Santiago</div>
+                                                    </div>
+                                                </div>
+                                                <div class="result-row flight-airport u-box-result" data-acindex="8">
+                                                    <div class="text-cntr">
+                                                        <div class="city-row ">
+                                                            <div class="city">IGR - Cataratas Del Iguazu, Argentina
+                                                            </div>
+                                                        </div>
+                                                        <div class="airport">Cataratas</div>
+                                                    </div>
+                                                </div>
+                                                <div class="result-row flight-airport u-box-result" data-acindex="9">
+                                                    <div class="text-cntr">
+                                                        <div class="city-row ">
+                                                            <div class="city">MDQ - Mar Del Plata, Argentina</div>
+                                                        </div>
+                                                        <div class="airport">Mar Del Plata</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filters-sub-header">
+                                <div class="filter-section-items-cntr">
+                                    <div class="c-tag c-tag-default filter-tags "><span>Africa</span></div>
+                                    <div class="c-tag c-tag-default filter-tags "><span>Asia</span></div>
+                                    <div class="c-tag c-tag-default filter-tags "><span>Europe</span></div>
+                                    <div class="c-tag c-tag-default filter-tags "><span>North America</span></div>
+                                    <div class="c-tag c-tag-default filter-tags "><span>Oceania</span></div>
+                                    <div class="c-tag c-tag-default filter-tags "><span>South America</span></div>
+                                </div>
+                                <div class="filters-applied-cntr">
+                                    <div class="applied-filters-cntr"></div>
+                                    <div class="c-dropdown filters-sort-cntr">
+                                        <div class="selectedSort  "><span>Popular</span><i
+                                                class="ixi-icon-caret u-ib c-dropdown-caret sorting-caret "></i></div>
+                                        <!-- <ul class="dropdown-list u-box u-nostyle-list sort-dd u-hide ">
+                                            <li data-index="0" class=" dropdown-list-item"><span>Popularity</span></li>
+                                            <li data-index="1" class=" dropdown-list-item"><span>Price</span></li>
+                                        </ul> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flights-cards-container">
+                                <div clasname="flight-cards">
+                                    <div class="c-card-flights c-card u-tooltip-wrapper">
+                                        <div class="card-header"><img class=""
+                                                src="https://images.ixigo.com/node_image/f_auto,t_medium/entityId/503b2a92e4b032e338f13fd5.jpg"
+                                                alt="New Delhi to Bhatinda flights"
+                                                title="New Delhi to Bhatinda flights" loading=""></div>
+                                        <div class="card-content">
+                                            <div class="flight-card-detail">
+                                                <div class="city-airport-cntr u-ib">
+                                                    <div class="city-cntr u-text-ellipsis" title="Bhatinda">Bhatinda
+                                                    </div>
+                                                    <div class="airport-cntr"><span class="aiport u-ib">DEL</span> <span
+                                                            class="right-arrow u-ib u-text-center"><i
+                                                                class="ixi-icon-arrow icon"
+                                                                aria-hidden="true"></i></span> <span
+                                                            class="aiport u-ib">BUP</span></div>
+                                                </div>
+                                                <div class="price-date-cntr u-ib u-text-right">
+                                                    <div class="price-cntr"><a class="price-link"
+                                                            href="/search/result/flight/DEL/BUP/26122023//1/0/0/e?source=Explore%20Deals"
+                                                            rel="" target="_blank">
+                                                            <div class="text u-ib u-v-align-bottom">from</div>
+                                                            <div class="c-price-display u-text-ellipsis u-ib u-v-align-bottom price-value"
+                                                                title=""><span class="icon"><i class="ixi-icon-inr icon"
+                                                                        aria-hidden="true"></i></span><span
+                                                                    class="">1785</span></div>
+                                                        </a></div>
+                                                    <div class="date-cntr">26 Dec 2023</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-card-flights c-card u-tooltip-wrapper">
+                                        <div class="card-header"><img class=""
+                                                src="https://images.ixigo.com/node_image/f_auto,t_medium/entityId/503b2a83e4b032e338f11b77.jpg"
+                                                alt="New Delhi to Jaipur flights" title="New Delhi to Jaipur flights"
+                                                loading=""></div>
+                                        <div class="card-content">
+                                            <div class="flight-card-detail">
+                                                <div class="city-airport-cntr u-ib">
+                                                    <div class="city-cntr u-text-ellipsis" title="Jaipur">Jaipur</div>
+                                                    <div class="airport-cntr"><span class="aiport u-ib">DEL</span> <span
+                                                            class="right-arrow u-ib u-text-center"><i
+                                                                class="ixi-icon-arrow icon"
+                                                                aria-hidden="true"></i></span> <span
+                                                            class="aiport u-ib">JAI</span></div>
+                                                </div>
+                                                <div class="price-date-cntr u-ib u-text-right">
+                                                    <div class="price-cntr"><a class="price-link"
+                                                            href="/search/result/flight/DEL/JAI/06112023//1/0/0/e?source=Explore%20Deals"
+                                                            rel="" target="_blank">
+                                                            <div class="text u-ib u-v-align-bottom">from</div>
+                                                            <div class="c-price-display u-text-ellipsis u-ib u-v-align-bottom price-value"
+                                                                title=""><span class="icon"><i class="ixi-icon-inr icon"
+                                                                        aria-hidden="true"></i></span><span
+                                                                    class="">2053</span></div>
+                                                        </a></div>
+                                                    <div class="date-cntr">06 Nov 2023</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-card-flights c-card u-tooltip-wrapper">
+                                        <div class="card-header"><img class="" src="bacck.jpeg" style="height: 320px;"
+                                                width="320px" ; alt="New Delhi to Bareilly flights"
+                                                title="New Delhi to Bareilly flights" loading=""></div>
+                                        <div class="card-content">
+                                            <div class="flight-card-detail">
+                                                <div class="city-airport-cntr u-ib">
+                                                    <div class="city-cntr u-text-ellipsis" title="Bareilly">Bareilly
+                                                    </div>
+                                                    <div class="airport-cntr"><span class="aiport u-ib">DEL</span> <span
+                                                            class="right-arrow u-ib u-text-center"><i
+                                                                class="ixi-icon-arrow icon"
+                                                                aria-hidden="true"></i></span> <span
+                                                            class="aiport u-ib">BEK</span></div>
+                                                </div>
+                                                <div class="price-date-cntr u-ib u-text-right">
+                                                    <div class="price-cntr"><a class="price-link"
+                                                            href="/search/result/flight/DEL/BEK/12112023//1/0/0/e?source=Explore%20Deals"
+                                                            rel="" target="_blank">
+                                                            <div class="text u-ib u-v-align-bottom">from</div>
+                                                            <div class="c-price-display u-text-ellipsis u-ib u-v-align-bottom price-value"
+                                                                title=""><span class="icon"><i class="ixi-icon-inr icon"
+                                                                        aria-hidden="true"></i></span><span
+                                                                    class="">2205</span></div>
+                                                        </a></div>
+                                                    <div class="date-cntr">12 Nov 2023</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-card-flights c-card u-tooltip-wrapper">
+                                        <div class="card-header"><img class="" src="backk.jpeg"
+                                                style="height: 320px; width: 320;" ;
+                                                alt="New Delhi to Chandigarh flights"
+                                                title="New Delhi to Chandigarh flights" loading=""></div>
+                                        <div class="card-content">
+                                            <div class="flight-card-detail">
+                                                <div class="city-airport-cntr u-ib">
+                                                    <div class="city-cntr u-text-ellipsis" title="Chandigarh">Chandigarh
+                                                    </div>
+                                                    <div class="airport-cntr"><span class="aiport u-ib">DEL</span> <span
+                                                            class="right-arrow u-ib u-text-center"><i
+                                                                class="ixi-icon-arrow icon"
+                                                                aria-hidden="true"></i></span> <span
+                                                            class="aiport u-ib">IXC</span></div>
+                                                </div>
+                                                <div class="price-date-cntr u-ib u-text-right">
+                                                    <div class="price-cntr"><a class="price-link"
+                                                            href="/search/result/flight/DEL/IXC/21112023//1/0/0/e?source=Explore%20Deals"
+                                                            rel="" target="_blank">
+                                                            <div class="text u-ib u-v-align-bottom">from</div>
+                                                            <div class="c-price-display u-text-ellipsis u-ib u-v-align-bottom price-value"
+                                                                title=""><span class="icon"><i class="ixi-icon-inr icon"
+                                                                        aria-hidden="true"></i></span><span
+                                                                    class="">2384</span></div>
+                                                        </a></div>
+                                                    <div class="date-cntr">21 Nov 2023</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-card-flights c-card u-tooltip-wrapper">
+                                        <div class="card-header"><img class=""
+                                                src="https://images.ixigo.com/node_image/f_auto,t_medium/entityId/503b2a64e4b032e338f0d0af.jpg"
+                                                alt="New Delhi to Shimla flights" title="New Delhi to Shimla flights"
+                                                loading=""></div>
+                                        <div class="card-content">
+                                            <div class="flight-card-detail">
+                                                <div class="city-airport-cntr u-ib">
+                                                    <div class="city-cntr u-text-ellipsis" title="Shimla">Shimla</div>
+                                                    <div class="airport-cntr"><span class="aiport u-ib">DEL</span> <span
+                                                            class="right-arrow u-ib u-text-center"><i
+                                                                class="ixi-icon-arrow icon"
+                                                                aria-hidden="true"></i></span> <span
+                                                            class="aiport u-ib">SLV</span></div>
+                                                </div>
+                                                <div class="price-date-cntr u-ib u-text-right">
+                                                    <div class="price-cntr"><a class="price-link"
+                                                            href="/search/result/flight/DEL/SLV/04122023//1/0/0/e?source=Explore%20Deals"
+                                                            rel="" target="_blank">
+                                                            <div class="text u-ib u-v-align-bottom">from</div>
+                                                            <div class="c-price-display u-text-ellipsis u-ib u-v-align-bottom price-value"
+                                                                title=""><span class="icon"><i class="ixi-icon-inr icon"
+                                                                        aria-hidden="true"></i></span><span
+                                                                    class="">2743</span></div>
+                                                        </a></div>
+                                                    <div class="date-cntr">04 Dec 2023</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-card-flights c-card u-tooltip-wrapper">
+                                        <div class="card-header"><img class=""
+                                                src="https://images.ixigo.com/node_image/f_auto,t_medium/entityId/503b2a78e4b032e338f101a1.jpg"
+                                                alt="New Delhi to Leh flights" title="New Delhi to Leh flights"
+                                                loading=""></div>
+                                        <div class="card-content">
+                                            <div class="flight-card-detail">
+                                                <div class="city-airport-cntr u-ib">
+                                                    <div class="city-cntr u-text-ellipsis" title="Leh">Leh</div>
+                                                    <div class="airport-cntr"><span class="aiport u-ib">DEL</span> <span
+                                                            class="right-arrow u-ib u-text-center"><i
+                                                                class="ixi-icon-arrow icon"
+                                                                aria-hidden="true"></i></span> <span
+                                                            class="aiport u-ib">IXL</span>
+                                                    </div>
+                                                </div>
+                                                <div class="price-date-cntr u-ib u-text-right">
+                                                    <div class="price-cntr"><a class="price-link"
+                                                            href="/search/result/flight/DEL/IXL/06122023//1/0/0/e?source=Explore%20Deals"
+                                                            rel="" target="_blank">
+                                                            <div class="text u-ib u-v-align-bottom">from</div>
+                                                            <div class="c-price-display u-text-ellipsis u-ib u-v-align-bottom price-value"
+                                                                title=""><span class="icon"><i class="ixi-icon-inr icon"
+                                                                        aria-hidden="true"></i></span><span
+                                                                    class="">2748</span></div>
+                                                        </a></div>
+                                                    <div class="date-cntr">06 Dec 2023</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flights-cards-showmore">ENDIND BOX</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><input type="hidden" value="" id="dataBE">
+        </div>
+    </div>
+
+    <div class="airline-interlinking-container">
+        <h2 class="airline-interlinking-heading">Popular Domestic Airlines</h2>
+        <div class="airline-interlinking-list-cntnr">
+            <div class="airline-interlinking-list"><img class="airline-img"
+                    src="https://images.ixigo.com/img/common-resources/airline-new/6E.png" height="42" width="50"
+                    alt="Indigo Airlines"><a href="/airlines/indigo-6e" class="airline-name">Indigo Airlines</a></div>
+            <div class="airline-interlinking-list"><img class="airline-img"
+                    src="https://images.ixigo.com/img/common-resources/airline-new/AI.png" height="42" width="50"
+                    alt="Air India"><a href="/airlines/air_india-ai" class="airline-name">Air India</a></div>
+            <div class="airline-interlinking-list"><img class="airline-img"
+                    src="https://images.ixigo.com/img/common-resources/airline-new/IX.png" height="42" width="50"
+                    alt="Air India Express"><a href="/airlines/airindia_express-ix" class="airline-name">Air India
+                    Express</a></div>
+            <div class="airline-interlinking-list"><img class="airline-img"
+                    src="https://images.ixigo.com/img/common-resources/airline-new/I5.png" height="42" width="50"
+                    alt="Air Asia India"><a href="https://www.ixigo.com/airlines/airasia_india-i5"
+                    class="airline-name">Air Asia India</a></div>
+            <div class="airline-interlinking-list"><img class="airline-img"
+                    src="https://images.ixigo.com/img/common-resources/airline-new/QP.png" height="42" width="50"
+                    alt="Akasa Air"><a href="/airlines/akasa_air-qp" class="airline-name">Akasa Air</a></div>
+            <div class="airline-interlinking-list"><img class="airline-img"
+                    src="https://images.ixigo.com/img/common-resources/airline-new/UK.png" height="42" width="50"
+                    alt="Vistara Airline"><a href="/airlines/vistara-uk" class="airline-name">Vistara Airline</a></div>
+            <div class="airline-interlinking-list"><img class="airline-img"
+                    src="https://images.ixigo.com/img/common-resources/airline-new/SG.png" height="42" width="50"
+                    alt="SpiceJet"><a href="/airlines/spicejet-sg" class="airline-name">SpiceJet</a></div>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-content u-box">
+            <h2 class="faq-content__title">Flight Booking FAQs</h2>
+            <div class="list-item list-item__show
+                  
+        ">
+                <div class="list-item__question">
+                    <h3 class="question-inner quest-style">Why is flight ticket booking the cheapest on ixigo?</h3><span
+                        class="ixi-icon-chevron dd-icon"></span>
+                </div>
+                <div class="list-item__answer">
+                    <div>ixigo directly searches multiple airline websites for the cheapest fares. Many airlines prefer
+                        to sell their cheapest flight tickets on ixigo. ixigo also searches through millions of routes
+                        to find the cheapest possible route for your flight journey.</div>
+                </div>
+            </div>
+            <div class="list-item list-item__show
+        
+        ">
+                <div class="list-item__question">
+                    <h3 class="question-inner quest-style">How to book cheap flight tickets ?</h3><span
+                        class="ixi-icon-chevron dd-icon"></span>
+                </div>
+                <div class="list-item__answer">
+                    <div>Here's how you can book cheap flight tickets<br>
+                        <ul style="list-style-type: disc; margin-top: 16px;">
+                            <li style="margin-left: 16px;">Book your flight tickets from ixigo in advance to get the
+                                cheapest deals.</li>
+                            <li style="margin-left: 16px;">Be flexible and consider flying during off-peak hours to get
+                                cheaper flight tickets.</li>
+                            <li style="margin-left: 16px;">Sign up for ixigo fare alerts feature to get notified when
+                                tickets go cheaper.</li>
+                            <li style="margin-left: 16px;">If you got time, try stopover flights as flights with
+                                multiple stops are often cheaper.</li>
+                            <li style="margin-left: 16px;">Avoid traveling on weekends, as air tickets are usually
+                                higher during this time.</li>
+                            <li style="margin-left: 16px;">Try budget airlines to book cheap flight tickets.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="list-item list-item__show
+        no-border
+        ">
+                <div class="list-item__question">
+                    <h3 class="question-inner quest-style">Why should you consider low-cost carriers for your flight
+                        tickets?</h3><span class="ixi-icon-chevron dd-icon"></span>
+                </div>
+                <div class="list-item__answer">
+                    <div>Low-cost carriers, also known as budget airlines, offer flight tickets at significantly lower
+                        airfare than full-service airlines.</div>
+                </div>
+            </div>
+            <div class="list-item list-item__show
+        no-border
+        hide-rem-faqs">
+                <div class="list-item__question">
+                    <h3 class="question-inner quest-style">How can I avail domestic flight offers on ixigo?</h3><span
+                        class="ixi-icon-chevron dd-icon"></span>
+                </div>
+                <div class="list-item__answer">
+                    <div>
+                        <p>To avail domestic flight offers on ixigo:</p>
+                        <ol style="list-style-type: decimal; margin-top: 16px;">
+                            <li style="margin-left: 20px;">Visit the ixigo website and enter your travel dates and
+                                destination.</li>
+                            <li style="margin-left: 20px;">Click on the "offers" tab to view available discounts and
+                                promotions on domestic flights.</li>
+                            <li style="margin-left: 20px;">Choose your preferred offer and make the payment using
+                                various options including credit and debit cards, net banking, and wallets.</li>
+                        </ol>
+                        <p>ixigo offers various cashback offers on domestic flight bookings from time to time. When it
+                            comes to payment options at the time of booking, ixigo offers a range of options to choose
+                            from, including credit and debit cards, net banking, and wallets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="static-about-content">
+        <style type="text/css">
+            .ftr-nav-content .faq-sec p {
+                margin-top: 20px;
+                margin-bottom: 7px;
+            }
+
+            .ftr__ixi-about__heading {
+                margin: 25px 0 7px;
+                font-size: 23px;
+                font-weight: 600;
+            }
+
+            .ftr__ixi-about__content,
+            .ftr__ixi-about__content p,
+            .ftr__ixi-about__content li {
+                margin-top: 10px;
+                margin-bottom: 0px;
+                font-size: 20px;
+            }
+
+            .ftr__ixi-about__content a {
+                color: #ff8c00 !important;
+                font-size: 14px !important;
+            }
+
+            .faqlist {
+                padding-left: 10px;
+                list-style-type: disc !important;
+                display: list-item !important;
+            }
+
+            .faqlist2 {
+                border-bottom: none !important;
+                padding-left: 13px !important;
+            }
+
+            .abbr-table,
+            .abbr-table th,
+            .abbr-table td {
+                border: 1px solid grey;
+                border-collapse: collapse;
+            }
+
+            .abbr-table th,
+            .abbr-table td {
+                padding: 15px;
+                text-align: left;
+                font-size: 14px;
+            }
+
+            .abbr-table td a {
+                color: #ff8c00 !important;
+                font-size: 14px;
+            }
+
+            .faq-sec {
+                font-size: 14px;
+            }
+        </style>
+        <div style="font-weight: 500;">
+            <div>
+                <h2 class="ftr__ixi-about__heading">
+                    <strong>Flight Ticket Booking</strong>
+                </h2>
+                <p class="ftr__ixi-about__content">
+                    FlyGo has a database of all flights and airlines in the world with its user-friendly interface that
+                    makes it easy to search and make a flight booking. Earn ixigo money on every flight booking. Redeem
+                    flygo money on future bookings to get <strong>cheaper flight tickets</strong>.</p>
+            </div>
+            <div>
+                <h2 class="ftr__ixi-about__heading">
+                    <strong>Cheap Flight Ticket</strong>
+                </h2>
+                <div class="ftr__ixi-about__content">
+                    <ul class="faqlist2">
+                        <li class="faqlist">
+                            Cheap flights are available at flygo for both domestic and international destination. flygo
+                            aggregates and compares real-time and future date travel information, prices, and
+                            availability for flights to provide you with cheapest flight tickets, flight deal, offers
+                            &amp; discount. Easily find cheaper flight ticket/air tickets as compared to other websites.
+                        </li>
+                        <li class="faqlist">
+                            flygo offers multiple banks, airlines and other partner deals which give you an instant off
+                            on flight tickets or air tickets.</li>
+                        <li class="faqlist">
+                            On flygo, you can save up to 40% on <strong>air ticket booking </strong>online with our fare
+                            alert feature on domestic and <a class="u-link-sm"
+                                href="https://www.ixigo.com/international-flights">international flights</a>.</li>
+                        <li class="faqlist">
+                            You can also select flygo's Special Fares (Student/Senior Citizen/ Armed Forces) to book
+                            flights at cheaper prices. By opting for these Special Fares, you can enjoy great discounts
+                            on available flight options.</li>
+                    </ul>
+                    <p>
+                        See all <a class="u-link-sm" href="https://www.ixigo.com/offers/tag/flight-offers/">flight
+                            booking offers.</a></p>
+                </div>
+            </div>
+            <div>
+                <h2 class="ftr__ixi-about__heading">
+                    <strong>Domestic Flight Booking</strong>
+                </h2>
+                <p class="ftr__ixi-about__content">
+                    flygo is a leading domestic and international flight booking platform in India, providing flight
+                    bookings at low prices. flygo offers a wide range of flight options from different airlines, so you
+                    can be sure to find a cheap flight that best suits your travel needs. You can also use flygo to
+                    compare flight prices and book cheap air tickets. Book flights of top domestic airlines like: <a
+                        class="u-link-sm" href="https://www.ixigo.com/airlines/air_india-ai">Air India, </a><a
+                        class="u-link-sm" href="https://www.ixigo.com/airlines/vistara-uk"><span>Vistara</span></a>, <a
+                        class="u-link-sm" href="https://www.ixigo.com/airlines/indigo-6e"><span>Indigo
+                            Airlines</span></a>, <a class="u-link-sm"
+                        href="https://www.ixigo.com/airlines/spicejet-sg"><span>Spicejet</span></a>, <a
+                        class="u-link-sm"
+                        href="https://www.ixigo.com/airlines/airasia_india-i5"><span>AirAsia</span></a>, <a
+                        class="u-link-sm" href="https://www.ixigo.com/airlines/go_first-g8"><span>Go First
+                            Flights</span></a>, <a class="u-link-sm"
+                        href="https://www.ixigo.com/airlines/airindia_express-ix"><span>Air-India express</span></a> and
+                    enjoy a hassle free trip experience.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <div class="ftr-nav-tabs">
+                <ul class="max2-container-width">
+                    <li class="nav-tab selected" data-index="0">Popular Flight Routes</li>
+                </ul>
+            </div>
+            <div class="ftr-nav-content ">
+                <ul class="nav-content max-container-width u-animated u-fadeIn">
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/new-delhi-kolkata-del-ccu"
+                            title="Delhi to Kolkata flights">Delhi to Kolkata flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/new-delhi-hyderabad-del-hyd"
+                            title="Delhi to Hyderabad flights">Delhi to Hyderabad flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/new-delhi-jaipur-del-jai"
+                            title="Delhi to Jaipur flights">Delhi to Jaipur flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/new-delhi-ahmedabad-del-amd"
+                            title="Delhi to Ahmedabad flights">Delhi to Ahmedabad flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/bengaluru-kolkata-blr-ccu"
+                            title="Bengaluru to Kolkata flights">Bengaluru to Kolkata flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/new-delhi-dharmsala-del-dhm"
+                            title="Delhi to Dharmsala flights">Delhi to Dharmsala flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/new-delhi-kochi-del-cok"
+                            title="Delhi to Kochi flights">Delhi to Kochi flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/chennai-coimbatore-maa-cjb"
+                            title="Chennai to Coimbatore flights">Chennai to Coimbatore flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/new-delhi-kochi-del-cok"
+                            title="Delhi to Kochi flights">Delhi to Kochi flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/new-delhi-patna-del-pat"
+                            title="Delhi to Patna flights">Delhi to Patna flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/new-delhi-kolkata-del-ccu"
+                            title="Delhi to Kolkata flights">Delhi to Kolkata flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/mumbai-ahmedabad-bom-amd"
+                            title="Mumbai to Ahmedabad flights">Mumbai to Ahmedabad flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/new-delhi-chandigarh-del-ixc"
+                            title="Delhi to Chandigarh flights">Delhi to Chandigarh flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/new-delhi-amritsar-del-atq"
+                            title="Delhi to Amritsar flights">Delhi to Amritsar flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/bengaluru-pune-blr-pnq"
+                            title="Bangalore to Pune flights">Bangalore to Pune flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/mumbai-chennai-bom-maa"
+                            title="Mumbai to Chennai flights">Mumbai to Chennai flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/bengaluru-kochi-blr-cok"
+                            title="Bengaluru to Kochi flights">Bengaluru to Kochi flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/mumbai-jaipur-bom-jai"
+                            title="Mumbai to Jaipur flights">Mumbai to Jaipur flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/coimbatore-chennai-cjb-maa"
+                            title="Coimbatore to Chennai flights">Coimbatore to Chennai flights</a></li>
+                    <li class="link-cntnr"><a href="https://www.ixigo.com/cheap-flights/bengaluru-kolkata-blr-ccu"
+                            title="Bengaluru to Kolkata flights">Bengaluru to Kolkata flights</a></li>
+                    <li class="u-link more">More <span class="dd-arrow down"></span></li>
+                    <li class="u-link less">Less <span class="dd-arrow up"></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ftr-nav-links">
+            <div class="max2-container-width">
+                <ul>
+                    <li><a target="_blank" href="/about" title="about us">about us</a></li>
+                    <li>
+                        <div class="interpunct"></div>
+                    </li>
+                    <li><a target="_blank" href="/about/investor-relations/" title="Investor Relations">Investor
+                            Relations</a></li>
+                    <li>
+                        <div class="interpunct"></div>
+                    </li>
+                    <li><a target="_blank" href="/about/csr/" title="Corporate Social Responsibility">CSR</a></li>
+                    <li>
+                        <div class="interpunct"></div>
+                    </li>
+                    <li><a target="_blank" href="/mobile" title="mobile">mobile</a></li>
+                    <li>
+                        <div class="interpunct"></div>
+                    </li>
+                    <li><a target="_blank" href="/about/more-info/privacy/" title="privacy policy">privacy</a></li>
+                    <li>
+                        <div class="interpunct"></div>
+                    </li>
+                    <li><a target="_blank" href="/about/more-info/terms-of-use/" title="terms of use">terms of use</a>
+                    </li>
+                    <li>
+                        <div class="interpunct"></div>
+                    </li>
+                    <li><a target="_blank" href="/about/careers/" title="careers">careers</a></li>
+                    <li>
+                        <div class="interpunct"></div>
+                    </li>
+                    <li><a target="_blank" href="/help-center" title="customer service">customer service</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="interpunct"></div>
+                    </li>
+                    <li><a href="https://www.abhibus.com/" target="_blank" rel="noopener noreferrer">AbhiBus</a></li>
+                    <li>
+                        <div class="interpunct"></div>
+                    </li>
+                    <li><a href="https://www.confirmtkt.com/" target="_blank" rel="noopener noreferrer">ConfirmTKT</a>
+                    </li>
+                </ul>
+                <ul class="u-rfloat">
+                    <li><a target="_blank" aria-label="facebook" href="https://www.facebook.com/ixigo"><i
+                                class="ixi-icon-facebook"></i></a></li>
+                    <li><a target="_blank" aria-label="twitter" href="https://www.twitter.com/ixigo"><i
+                                class="ixi-icon-twitter"></i></a></li>
+                    <li><a target="_blank" aria-label="youtube" href="https://www.youtube.com/user/ixigorocks"><i
+                                class="ixi-icon-video"></i></a></li>
+                </ul>
+                <div class="u-clear"></div>
+            </div>
+        </div>
+        <div class="ftr-copyright"><label>© <span class="copyright-year">2023</span> Le Travenues Technology Ltd. India.
+                All brands are trademarks of their respective owners.</label></div><input type="hidden"
+            value="1699636585741" id="backendTime">
+    </footer>
+</body>
+
+</html>
