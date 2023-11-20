@@ -1,0 +1,970 @@
+*{
+    margin: 0px;
+}
+
+.html{
+    position: relative;
+    /* scroll-behavior: smooth; */
+}
+.body{
+    pointer: fixed;
+}
+.navbar{
+    width: 1468px; 
+    height: 60px;
+    background-color: white;
+    /* border: 2px solid ; */
+    padding: 0px 20px;
+    display: flex;
+    position: relative;
+    top: 0px;
+    z-index: 20;
+
+}
+.left-wrap{
+    height: 68px;
+    width: 900.35px;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.navlogo{
+    width: 83px;
+    height: 46px;
+    margin-right: 50px;
+    margin-left: 20px;
+    vertical-align: middle ;
+}
+.logo{
+    background-image: url("logoo.jpeg");
+    background-size: cover;
+    width: 83px;
+    height: 39px;
+    padding: 10px;
+}
+.nav-list{
+    display: flex;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    justify-content: space-evenly;
+    height: 39.60px;
+    color: #fff;
+    height: 39.600px;
+    /* margin: 0px 10px;
+    padding: 5px 15px;
+    font-size: 16px;  */
+    /* border-bottom: solid 3px #ec5b24; */
+}
+.nav-list-item{
+    margin: 0px 10px;
+    padding: 5px 15px;
+    font-size: 16px; 
+    font-weight: 600;
+    letter-spacing: .5px;
+    cursor: pointer;
+}  
+.nav-list-item.selected{
+    color: #fff;
+}
+.nav-list-item:hover{
+    color: #fff;
+}
+.elementm{
+    padding: 20px 10px 18px;
+    display: flex;
+    text-decoration: none;
+}
+.nav-item-txt1{
+    margin-left:26px ;
+    margin-right: 15px;
+    color: red;
+    letter-spacing: 1px;
+}
+.nav-item-txt{
+    margin-left: 20px;
+    margin-right: 15px;
+    justify-content: space-evenly;
+    letter-spacing: 0.5px;
+    display: flex;
+    color: #000000DE;
+}
+.nav-item-txt:hover{
+    color: red;
+}
+.right-wrap{
+    width: 560.83px;
+    height: 68px;
+    margin-left: 30px;
+    
+}
+.flight-home-page{
+   /* position: relative; */
+   height: 550px;
+   margin-top: -67px;
+   width: 225px;
+   padding: 12px 20px 15px;
+}
+
+.banner{
+    /* position: relative;
+    height: 550px;
+    margin-top: -67px;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;  
+    width: 1513px;
+    height: 550px;
+    top: 275px;
+    /* position: absolute; */
+    background-color: aquamarine;
+    font-size: 16px;
+    /* margin: 0px 10px; */
+}
+.banner-img-container{
+    height: 550px;
+    width: 1513px;
+    background-image: url("aero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+.flight-form {
+    top: 275px;
+    position: absolute;
+     /* background-color: white; */
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    padding: 20px 0px;
+    width: 225px;
+    height: 116.25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-color: rgba(0,0,0,.12);
+    margin: 0 16px;
+    justify-content: space-evenly;
+}
+.max-container-width{
+    /* margin: 0px auto; */
+    margin-left: 96.400px;
+    margin-right: 96.400px;
+    width: 1280px;
+    height: 116.25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: 275px 118.750px;
+    background-color: white; 
+
+}
+ 
+.nav-list2{
+    margin: 0px 10px;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-bottom: solid 3px #ec5b24;
+    color: white;
+}
+ /* .flight-form.max-container-width{
+     width: 1280px;
+     height: 116.25px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     
+ } */
+.nav-list-item2{
+    margin: 0px 10px;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    width: 102px;
+    height: 27.800px;
+    color: black;
+}
+
+.nav-list-item.selected{
+    border-bottom: #ec5b24;
+}
+
+.u-uppercase{
+    text-transform: uppercase;
+}
+
+.form-fields{
+    padding:  12px 20px 15px;
+    /* background-color: white; */
+    /* bottom-border: 3px solid black; */
+    display: flex;
+    /* margin-left: 0px; */
+    height: 26px;
+    cursor: pointer;
+    font-size: 22px;
+    height: 100px;
+    vertical-align: bottom;
+    margin: 0 30px;
+}
+.orgn{
+    /* width: 185px; */
+    margin-left: 0px;
+    font-size: 22px;
+
+
+}
+ /* .c-input-cntr {
+    position: relative!important;
+    border-bottom: 2px solid rgba(0,0,0,.12);
+    height: 100%;
+    line-height: 24px;
+    font-size: 20px;
+    color: rgba(0,0,0,.38);
+    transform: translate(0,0);
+    transition-duration: .2s;
+    cursor: text;
+    height: 23px;
+    overflow: visible;
+    
+}  */
+
+.input-label {
+    /* font-size: 12px;
+    color: rgba(0,0,0,.38); */
+    transform: translate(0,0);
+    transition-duration: .2s;
+    cursor: text;
+    height: 23px;
+    overflow: visible;
+    font-size: 15px;
+    cursor: text;
+    font-size: 15px;   
+}
+.c-input-cntr{
+    border-radius: 0px;
+    border-bottom-style: groove;
+    line-height: 24px;
+    cursor: text;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+    font-size: 16px;
+    line-height: 25px;
+
+}
+.material-underline{
+    position: relative!important;
+    top: 2px;
+    display: block;
+    width: 100%;
+}
+.swap-icon{
+    /* margin: 0 16px; */
+    height: 26px;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 3;
+    /* width: 25px */
+    margin-right: 14px;
+    font-size: 18px;
+    
+}
+.c-input{
+    border: none;
+    border-radius: 0px;
+    font-size: 16px;
+    margin: 0;
+    border-radius: 0;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(0,0,0,.87);
+
+}
+
+.style {
+    display: none;
+    left: 104.4px;
+}
+
+.c-auto-cmpltr .autocompleter-results {
+    position: absolute!important;
+    font-size: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    background-color: #FFF;
+    z-index: 9;
+    margin-top: 8px;
+}
+.date {
+    vertical-align: bottom;
+    margin: 0 30px;
+    border: none;
+}
+.from-to-cal {
+    position: relative!important;
+    display: flex;
+    border : none;
+    margin-right: 5%;
+    cursor : pointer;
+}
+.from-date{
+    margin-right: 5%;
+    cursor: pointer;
+
+}
+.dstn{
+    font-size: 12px;
+
+}
+.passenger{
+    width: 195px;
+    margin-right : 30px;
+}
+.search{
+    width: 180px;
+}
+.c-btn {
+    background-color: #EC5B24;
+    color: #FFF;
+    padding: 10px 14px;
+    height: 40px;
+    border-radius: 2px;
+    border: none;
+    width: 100%;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.3);
+    position: relative;
+}
+.c-btn:hover{
+    background-color: red;
+}
+
+.u-link, .u-link-sm {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+.u-ripple {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: 0 0;
+}
+
+.u-ripple-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,.45);
+}
+.page-content {
+    width: 1280px;
+    margin: auto;
+
+}
+.main-cntr{
+    width: 100%;
+    text-align: left;
+}
+
+.home-widgets-cntr {
+    margin: 50px 0;
+}
+.trending-dest-wrapper {
+    width: 1280px;
+    height: 100%;
+}
+.page-content .main-cntr .home-widgets-cntr .home-widget:first-child {
+    margin-top: 0;
+}
+.trending-dest-container {
+    background-color: #fff;
+    padding: 0 128px 50px;
+}
+.u-box {
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+.trending-dest-container .trending-dest-header {
+    font-size: 32px;
+    text-align: center;
+    color: #EC5B24;
+    padding: 24px 0 8px;
+}
+.filters-container .filters-header {
+    display: flex;
+    justify-content: space-between;
+}
+.filters-container .flight-origin-fliter, .form-cntr .flight-form .form-fields .search {
+    width: 180px;
+}
+.filters-container .flight-origin-fliter .c-input-cntr {
+    margin-top: 4px;
+    border-bottom: 1px solid transparent;
+}
+.c-input-cntr .material-underline {
+    position: relative!important;
+    top: 2px;
+    display: block;
+    width: 100%;
+}
+.c-input-cntr .material-underline:after, .c-input-cntr .material-underline:before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute!important;
+    background: #EC5B24;
+    -webkit-transition: .2s ease all;
+    transition: .2s ease all;
+}
+.c-auto-cmpltr .clear-input {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 0;
+    top: 28px;
+    cursor: pointer;
+    font-size: 10px;
+    text-align: center;
+    color: #AAA;
+    margin-right: 10px
+}
+.ixi-icon-cross:before {
+    content: "\f124"; 
+}
+.filters-container .flight-origin-fliter .autocompleter-results {
+    width: 300px;
+}
+.c-auto-cmpltr .autocompleter-results {
+    position: absolute!important;
+    font-size: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    background-color: #FFF;
+    z-index: 9;
+    margin-top: 8px;
+}
+.filters-container .filters-sub-header {
+    margin-top: -1px;
+    border-top: 1px solid rgba(0,0,0,.12);
+}
+.filters-container .filter-section-items-cntr {
+    text-align: center;
+    padding: 32px 0 16px;
+    min-height: 96px;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+}
+.filters-container .filter-tags {
+    margin: 0 16px 16px 0;
+    cursor: pointer;
+}
+.c-tag-default {
+    color: black;
+    border: 1px solid rgba(0,0,0,.32);
+    padding: 2px 10px;
+}
+.c-tag {
+    display: inline-block;
+    font-size: 18px;
+    background-color: #FFF;
+    border-radius: 25px;
+}
+.filters-header{
+    display: flex;
+}
+.c-tag:hover{
+    color: red;
+}
+.filters-container .filters-applied-cntr {
+    min-height: 48px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.filters-container .selectedSort {
+    color: rgba(0,0,0,.64);
+    cursor: pointer;
+}
+.filters-container .sorting-caret {
+    font-size: 8px;
+}
+
+.c-dropdown .c-dropdown-caret {
+    margin-left: 10px;
+}
+.selectedSort{
+    color: black;
+    border-bottom : 2px solid grey;
+    font-size: 24px;
+}
+.flight-cards-container .flights-cards{
+    height: 655px;
+    display: flex;
+}
+.trending-dest-container .c-card-flights {
+    /* margin: 0 32px 32px 0; */
+    margin: 0px 5px 40px 10px;
+}
+.u-tooltip-wrapper {
+    position: relative;
+}
+.c-card {
+    border: 1px solid #e7e7e7;
+    width: 320px;
+    cursor: pointer;
+    border-radius: 2px;
+    overflow: hidden;
+    text-decoration: none;
+    vertical-align: top;
+    display: inline-block;
+    background: #fff;
+    transition: all .3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-header {
+    width: 318px;
+    /* height: 190px; */
+    background-size: cover;
+}
+ /* .c-card .card-content {
+    height: 80px;
+    padding: 16px 20px;
+} */
+/* 
+.c-card .card-header {
+    width: 100%;
+    height: 190px;
+    background-size: cover; 
+}
+.card .card-content {
+    height: 80px;
+    padding: 16px 20px;
+} */
+.card-content{
+    background-color: white;
+    /* height:  300px; */
+    width: 100px;
+    margin: 20px 20px
+}
+.c-card .card-content .flight-card-detail {
+    font-size: 0;
+}
+.c-card .card-content .flight-card-detail .city-airport-cntr{
+    font-size: 16px;
+}
+.c-card .card-content .flight-card-detail .city-airport-cntr,{
+    width: 50%;
+}
+.c-card .card-content .flight-card-detail .city-airport-cntr.city-airport-cntr .city-cntr, {
+    color: rgba(0,0,0,.87);
+    font-weight: 600;
+}
+.c-card .card-content .city-cntr {
+    text-overflow: ellipsis;
+}
+
+.u-text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.c-card .card-content .flight-card-detail .city-airport-cntr.city-airport-cntr .airport-cntr,{
+    color: rgba(0,0,0,.38);
+    font-weight: 400;
+}
+.c-card .card-content .flight-card-detail .right-arrow {
+    font-size: 11px;
+    line-height: 28px;
+    vertical-align: bottom;
+}
+.c-card .card-content .flight-card-detail .right-arrow {
+    font-size: 11px;
+    line-height: 28px;
+    vertical-align: bottom;
+}
+.i{
+    font-style: italic;
+}
+.c-card.card-content .flight-card-detail .price-date-cntr.price-date-cntr {
+    font-size: 16px;
+}
+.c-card .card-content .flight-card-detail .price-date-cntr {
+    width: 50%;
+}
+.c-card .card-content .flight-card-detail .price-date-cntr.price-date-cntr .price-cntr {
+    color: rgba(0,0,0,.87);
+    font-weight: 600;
+}
+.c-card .card-content .flight-card-detail .price-date-cntr.price-date-cntr .price-cntr .text {
+    font-weight: 400;
+}
+.c-card .card-content .flight-card-detail .price-date-cntr.price-date-cntr .price-cntr .price-link .price-value {
+    padding-left: 4px;
+}
+.c-card .card-content .flight-card-detail .price-date-cntr.price-date-cntr .price-cntr .icon {
+    vertical-align: baseline;
+}
+.c-price-display .icon {
+    position: relative!important;
+    font-size: .85em;
+    margin-right: 0.05em;
+}
+.c-price-display span{
+    vertical-align: middle;
+    display: inline-block;
+}
+.c-card .card-content .flight-card-detail .price-date-cntr.price-date-cntr .date-cntr {
+    color: rgba(0,0,0,.38);
+    font-weight: 400;
+}
+.trending-dest-container .flights-cards-showmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,.12);
+    background-color: #efefef;
+    color: rgba(0,0,0,.38);
+    height: 48px;
+    cursor: pointer;
+    font-weight: 600;
+} 
+.flights-cards-showmore{
+    background-color: aquamarine;
+}
+.flights-cards-showmore:hover{
+    color: blue;
+}
+.airline-interlinking-container {
+    position: relative;
+    margin: 0 auto 50px;
+}
+.airline-interlinking-container, .static-about-content {
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    background-color: #FFF;
+    border-radius: 2px;
+    width: 1280px;
+}
+.airline-interlinking-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+}
+.airline-interlinking-heading, .know-more {
+    font-weight: 600;
+    color: #EC5B24;
+}
+.airline-interlinking-list-cntnr {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 25px;
+}
+.airline-interlinking-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.airline-name {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 13px;
+}
+
+.faq-section {
+    width: 1280px;
+    margin: auto auto 50px;
+}
+ .faq-section .faq-content{
+    padding: 35px 40px;
+}
+.u-box {
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    background-color: #FFF;
+}
+
+.c-tooltip, .u-box {
+    border-radius: 2px;
+}
+.faq-section .faq-content .faq-content__title {
+    font-size: 32px;
+    letter-spacing: .4px;
+    color: #EC5B24;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 0;
+}
+.faq-section .faq-content .list-item {
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    padding: 20px 0;
+}
+.faq-section .faq-content .list-item .list-item__question {
+    font-size: 18px;
+    color: rgba(0,0,0,.87);
+    line-height: 1.4;
+    font-weight: 600;
+    letter-spacing: .3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.
+.quest-style {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.faq-section .faq-content .list-item.list-item__show .list-item__question .dd-icon {
+    transform: rotate(-90deg);
+}
+.faq-section .faq-content .list-item .list-item__question .dd-icon {
+    transition-duration: .3s;
+}
+/* .faq-section .faq-content .list-item .list-item__answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgba(0,0,0,.87);
+    line-height: 24px;
+    letter-spacing: .23px;
+    padding: 5px 0 5px 15px;
+    border-left: 3px solid rgba(0,0,0,.12);
+} */
+.faq-section .faq-content .list-item {
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    padding: 20px 0;
+}
+.faq-section .faq-content .list-item.list-item__show .list-item__answer {
+    display: block!important;
+}
+ .faq-section .faq-content .list-item .list-item__answer {
+    /* display: none; */
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgba(0,0,0,.87);
+    line-height: 24px;
+    letter-spacing: .23px;
+    padding: 5px 0 5px 15px;
+    border-left: 3px solid rgba(0,0,0,.12);
+}
+
+.static-about-content{
+    padding: 35px 40px;
+    margin: auto auto 50px;
+    width: 1203px;   
+
+}
+.airline-interlinking-container, .static-about-content {
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    background-color: #FFF;
+    border-radius: 2px;
+}
+.ftr__ixi-about__heading {
+    margin: 25px 0 7px;
+    font-size: 10px;
+    font-weight: 600;
+    border-bottom: 0.5px solid grey;
+}
+.ftr__ixi-about__content, .ftr__ixi-about__content p, .ftr__ixi-about__content li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+} 
+ .ftr-nav-tabs {
+    background-color: #3A1248;
+    /* color: rgba(255,255,255,.4); */
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.ftr-nav-tabs ul {
+    border-bottom: 1px solid rgba(255,255,255,.4);
+    padding-bottom: 14px;
+}
+
+@media screen and (max-width: 1280px)
+.max-container-width {
+    width: 1262px;
+}
+.max2-container-width {
+    /* width: 1280px; */
+    margin: 0 auto;
+    margin-left: 96.400px;
+    margin-right: 96.400px;
+    width: 1280px;
+    height: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: 275px 118.750px;
+    background-color: voilet; 
+
+}
+footer ul {
+    /* margin: 0; */
+    padding: 0;
+}
+.u-nostyle-list, .footer ul {
+    list-style-type: none;
+}
+footer .ftr-nav-tabs .nav-tab.selected {
+    color: #EC5B24;
+    border-bottom: 2px solid #EC5B24;
+}
+
+footer .ftr-nav-tabs .nav-tab {
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+    color: black;
+}
+footer ul li {
+    margin: 0;
+    padding: 0;
+    display: inline-block!important;
+}
+footer .ftr-nav-content {
+    background-color: #3A1248;
+    overflow: hidden;
+    color: black;
+}
+footer .ftr-nav-content ul {
+    /* padding: 15px 0 5px; */
+    border-bottom: 1px solid rgba(255,255,255,.8);
+    color: white;
+    position: relative;
+    background-color: #3A1248;
+}
+
+@media screen and (max-width: 1280px)
+.max-container-width {
+    width: 1262px;
+}
+
+
+footer .ftr-nav-content li {
+    width: 19%;
+    padding-right: 20px;
+    vertical-align: top;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+footer ul li {
+    margin: 0;
+    padding: 0;
+    display: inline-block!important;
+}
+footer .ftr-nav-content a {
+    color:red;
+    font-weight: 400;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+footer a {
+    /* color: #EC5B24;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600; */
+    cursor: pointer;
+    text-decoration: none;
+}
+.breadcrumbs li a, .u-cta, .u-link, .u-link-sm, footer a {
+    letter-spacing: .3px;
+}
+footer .ftr-nav-links {
+    background-color: #3A1248;
+    color: #FFF;
+    padding: 15px 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+footer .ftr-nav-links ul {
+    display: inline-block!important;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+footer .ftr-nav-links li {
+    vertical-align: middle;
+}
+
+footer ul li {
+    margin: 0;
+    padding: 0;
+    display: inline-block!important;
+}
+footer .ftr-nav-links li:first-child a {
+    padding-left: 0;
+}
+
+footer .ftr-nav-links a {
+    color: rgba(255,255,255,.8);
+    font-weight: 600;
+    padding: 0 10px;
+    font-size: 12px;
+}
+footer a {
+    /* color: #EC5B24;
+    font-size: 14px; */
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    cursor: pointer;
+    text-decoration: none;
+}
+.breadcrumbs li a, .u-cta, .u-link, .u-link-sm, footer a {
+    letter-spacing: .3px;
+}
+
+footer .ftr-nav-links ul {
+    display: inline-block!important;
+}
+/* .u-rfloat {
+    float: right;
+} */
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+/* footer .ftr-nav-links li:first-child a {
+    padding-left: 0;
+}
+
+footer .ftr-nav-links a {
+    color: rgba(255,255,255,.8);
+    font-weight: 600;
+    padding: 0 10px;
+    font-size: 12px;
+} */
+
+footer .ftr-copyright {
+    text-align: center;
+    padding: 15px;
+    background-color: #2E013D;
+}
+footer .ftr-copyright label {
+    color: rgba(255,255,255,.8);
+    font-size: 15px;
+    font-weight: 800;
+}
+ 
