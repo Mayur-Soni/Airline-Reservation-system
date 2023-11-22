@@ -1,0 +1,182 @@
+.brand-banner {
+    background: #721053;
+    background: -webkit-linear-gradient(45deg,#721053,#AD2E41);
+    background: -o-linear-gradient(45deg,#721053,#AD2E41);
+    background: -moz-linear-gradient(45deg,#721053,#AD2E41);
+    background: linear-gradient(45deg,#102c72,#AD2E41);
+    height: 300px;
+    width: 100%;
+}
+.help-center-wrapper {
+    margin-top: -260px;
+}
+.card-content-section {
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    background-color: #FFF;
+    width: 980px;
+    margin: 20px auto 0;
+    border-radius: 8px;
+    padding: 35px 40px;
+    min-height: 500px;
+ }
+ .login-header {
+    font-size: 25px;
+    background-color: #efefef;
+    letter-spacing: .4px;
+    color: rgba(0,0,0,.87);
+    margin: -35px -40px 20px;
+    padding: 35px 40px 0;
+    font-weight: 800;
+    height: 100px;
+}
+.login-button{
+    width: 150px;
+    padding: 20px 0;
+    cursor: pointer;
+    color: white;
+}
+
+.help-center-page .card-content-section .login-header .login-button {
+    width: 150px;
+    padding: 20px 0;
+}
+.c-btn {
+    background-color: #EC5B24;
+    padding: 10px 14px;
+    height: 40px;
+    border-radius: 2px;
+    border: none;
+    width: 100%;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.3);
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+.c-btn: hover{
+    background-color: #FFF;
+}
+.u-ripple {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: 0 0;
+    cursor: pointer;
+
+}
+/* .help-center-page .home-page-view .home-content-section */ .help-center-disclaimer-wrapper { 
+    margin-top: 10px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+/* .help-center-page .home-page-view .home-content-section */ .help-center-disclaimer-wrapper .help-center-disclaimer { */
+    padding: 10px 10px 30px;
+    background-color: #FEF6F5;
+    border-radius: 5px;
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+}
+/* .help-center-page .home-page-view .home-content-section .help-center-disclaimer-wrapper .help-center-disclaimer */ .text-container { 
+    display: flex;
+}
+/* .help-center-page .home-page-view .home-content-section */.help-center-disclaimer-wrapper .help-center-disclaimer .text-container .disclaimer-svg { 
+    padding-right: 10px;
+}
+.text-container ol {
+    margin: 0;
+    padding-left: 5px;
+}
+.text-container ol li {
+    margin-left: 15px;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+}
+.header-text {
+    margin-bottom: 0;
+}
+.header-text {
+    font-size: 24px;
+    letter-spacing: .4px;
+    color: rgba(0,0,0,.87);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.sub-header-text {
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: .27px;
+}
+.home-menu .list-item {
+    display: inline-block!important;
+    vertical-align: top;
+    text-align: center;
+    width: 275px;
+    margin-right: 37px;
+    margin-bottom: 40px;
+    font-size: 0;
+    cursor: pointer;
+}
+.item-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin: 0 auto;
+    background-color: rgba(234,78,47,.18);
+    position: relative!important;
+}
+.item-logo .icon {
+    position: absolute!important;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    color: #EC5B24;
+}
+.item-text {
+    line-height: 1.5;
+}
+.text-primary {
+    color: rgba(0,0,0,.87);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+.text-secondary {
+    color: rgba(0,0,0,.64);
+    font-size: 14px;
+}
+.about-section {
+    border-top: 1px solid rgba(0,0,0,.12);
+    padding-top: 30px;
+}
+.about-heading {
+    font-size: 24px;
+    letter-spacing: .4px;
+    color: rgba(0,0,0,.87);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about-sub-heading {
+    font-size: 19px;
+    letter-spacing: .89px;
+    margin-bottom: 10px;
+}
+.text-link-list .list-item {
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    padding: 20px 0;
+}
+.text-link-list .list-item .item-question {
+    font-size: 19px;
+    color: rgba(0,0,0,.87);
+    line-height: 1.4;
+    font-weight: 600;
+    letter-spacing: .3px;
+    cursor: pointer;
+}
+.item-answer{
+    font-size: 19px;
+}
