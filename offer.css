@@ -1,0 +1,253 @@
+#header {
+    position: relative;
+    padding: 6em 0;
+}
+element.style {
+    text-align: center;
+    font-size: 27px;
+    line-height: 1.8rem;
+    background-image: url(https://images.ixigo.com/node_image/q_80/imageURL?url=https://www.ixigo.com/offers/content/images/2023/10/offers-homepage-image.jpeg);
+}
+
+#header .header-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: no-repeat center 50% / cover;
+    z-index: 1;
+}
+.inner {
+    max-width: 56em;
+    margin: 0 auto;
+    padding: 0 2em;
+    cursor : text;
+    padding-bottom: 40px;
+    /* border: 1px solid grey; */
+    /* border-radius: 2px; */
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all ease-out 0.2s;
+}
+#post-index {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 4em;
+    padding: 0.5em;
+    transition: all ease-in 0.5s;
+    z-index: 10;
+}
+.breadcrumb {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0px;
+    /* font-size: 13px; */
+}
+.breadcrumb li:first-child {
+    padding-left: 0;
+}
+
+.breadcrumb li {
+    display: inline-block;
+    padding: 4px 10px;
+}
+li {
+    position: relative;
+}
+.post-content a, .breadcrumb a {
+    color: #1fb0de !important;
+}
+.post-list .post .post-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.post-list .post .post-image {
+    position: relative;
+    /* margin: -2em -2em 0; */
+    overflow: hidden;
+    background: #EC5B24;
+}
+.post .post-image {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+element.style {
+    background-image: url(https://images.ixigo.com/node_image/q_80/imageURL?url=https://www.ixigo.com/offers/content/images/2023/10/Vistara-Offer_2@3x.png);
+}
+.post-preview-image {
+    display: inline-block;
+    background: no-repeat center 130% / cover;
+    width: 100%;
+    height: 170px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all ease-out 0.2s;
+}
+.post .post-meta {
+    display: block;
+    font-size: 0.75em;
+    line-height: 1.334em;
+    font-weight: 400;
+    margin-bottom: 1.334em;
+}
+.post-list .post .post-title {
+    font-size: 1.5em;
+    line-height: 1.167em;
+}
+
+.post .post-title {
+    position: relative;
+    color: #000;
+    font-size: 2em;
+    line-height: 1.375em;
+    font-weight: 600;
+    text-indent: -1px;
+    letter-spacing: -1px;
+    margin: 0.25em 0 0.75em;
+}
+.post .post-title a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+}
+.post-list .post .post-excerpt {
+    margin: 0;
+}
+.post-list .post .post-more {
+    display: block;
+    margin-top: 1.5em;
+}
+
+.post-more.cta {
+    font-size: 20px;
+}
+.post-list .post .post-more a {
+    display: block;
+    font-size: 0.875em;
+    line-height: 1.143em;
+    font-weight: 400;
+    color: #363740;
+}
+
+@media only screen and (min-width: 60em)
+.cta a, .cta h1, .cta h2, .cta h3 {
+    display: inline-block;
+}
+.cta a, .cta h1, .cta h2, .cta h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0;
+    background: #EC5B24 !important;
+    color: white !important;
+    text-align: center;
+    padding: 15px 50px;
+    border: 0;
+    display: block;
+    border-radius: 3px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.08), 0 4px 8px rgba(0,0,0,0.14);
+}
+.content{
+    height: 1112px;
+    width: 1200px;
+    margin: 2px 280px;
+}
+element.style {
+    position: relative;
+    height: 996.8px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.75em;
+    line-height: 1.143em;
+    margin: 2.286em 0 -0.571em;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizeLegibility;
+    color: #1F2026;
+}
+element.style {
+    padding: 0px 30px 30px;
+}
+p {
+    margin: 2em auto;
+}
+#footer {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    font-size: 0.75em;
+    line-height: 1.334em;
+    background: #1F2026;
+    color: #737580;
+    z-index: 20;
+    transition: all ease-out 0.4s;
+    transform: translate3d(0, 0, 0);
+    transform-style: preserve-3d;
+    opacity: 1;
+}
+#ixiNavLinks {
+    padding: 0 20px;
+    text-align: center;
+}
+#ixiNavLinks ul {
+    display: inline-block;
+}
+ol, ul {
+    padding: 0em 1em 0 3em;
+    margin: 2em auto;
+    font-size: 14px;
+}
+#ixiNavLinks li {
+    display: inline;
+    padding: 0 7px;
+}
+li {
+    position: relative;
+}
+#ixiNavLinks li a {
+    text-decoration: none;
+}
+#footer a {
+    color: #9D9FA6;
+    font-weight: 400;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all ease-out 0.2s;
+}
+a {
+    background-color: transparent;
+}
+.credits {
+    text-align: center;
+    font-size: 0.75em;
+    line-height: 1.334em;
+    padding: 2.667em;
+    overflow: auto;
+    padding-bottom: 80px;
+    font-size: 13px;
+}
+.footer-upper
+{
+    /* padding-top: 400px; */
+    padding: 420px 30px 30px;
+    font-size: 19px;
+}
